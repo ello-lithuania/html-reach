@@ -1,0 +1,14 @@
+<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.5" y1="2.5" x2="34.5" y2="2.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="2.5" x2="34.5" y2="2.5" stroke="#171616" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="2.5" x2="34.5" y2="2.5" stroke="#A7A7A7" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="12.5" x2="34.5" y2="12.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="12.5" x2="34.5" y2="12.5" stroke="#171616" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="12.5" x2="34.5" y2="12.5" stroke="#A7A7A7" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="22.5" x2="34.5" y2="22.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="22.5" x2="34.5" y2="22.5" stroke="#171616" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="22.5" x2="34.5" y2="22.5" stroke="#A7A7A7" stroke-width="3" stroke-linecap="round"/>
+<circle cx="2.5" cy="2.5" r="2.5" fill="#A7A7A7"/>
+<circle cx="2.5" cy="12.5" r="2.5" fill="#A7A7A7"/>
+<circle cx="2.5" cy="22.5" r="2.5" fill="#A7A7A7"/>
+</svg>

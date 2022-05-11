@@ -178,507 +178,1704 @@
                     <img src="./images/menu.svg" /><span class="product-menu-title">Prekių katalogas</span>
                 </a>
                 <div class="container dropdown-menu" style="padding-right: 24px; border: none; padding-top: 0; padding-bottom: 0;">
-                    <div class="row" style="margin: 0 0 0 -15px;background-color: transparent;">
-                        <div class="col-lg-12" style="padding: 0;">
-                            <div class="d-flex align-items-start">
-                                <div class="nav flex-column nav-pills" id="menu_tabs" role="tablist" aria-orientation="vertical" style="background-color: #F6F6F6; width: 300px; padding-left: 12px; padding-top: 15px;">
-                                    <button class="nav-link" id="menu1" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu1" type="button" role="tab" aria-controls="submenu1" aria-selected="true">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/deklai_menu_black_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Dėklai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu2" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu2" type="button" role="tab" aria-controls="submenu2" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/ekrano_apsaugos_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Ekrano apsaugos</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu3" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu3" type="button" role="tab" aria-controls="submenu3" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/ikrovikliai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Įkrovikliai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu4" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu4" type="button" role="tab" aria-controls="submenu4" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/kabeliai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Kabeliai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu5" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu5" type="button" role="tab" aria-controls="submenu5" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/akumuliatoriai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Akumuliatoriai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu6" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu6" type="button" role="tab" aria-controls="submenu6" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/apsaugines_kaukes_menu_icon.svg" style="margin-top: 6px;" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Apsauginės kaukės</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu7" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu7" type="button" role="tab" aria-controls="submenu7" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/atminties_laikmenos_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Atminties laikmenos</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu8" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu8" type="button" role="tab" aria-controls="submenu8" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/laisvu_ranku_iranga_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Laisvų rankų įranga</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu9" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu9" type="button" role="tab" aria-controls="submenu9" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/nesiojami_garsiakalbiai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Nešiojami garsiakalbiai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu10" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu10" type="button" role="tab" aria-controls="submenu10" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/telefonu_laikikliai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Telefonų laikikliai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu11" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu11" type="button" role="tab" aria-controls="submenu11" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/vaizdo_registratoriai_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Vaizdo registratoriai</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                    <button class="nav-link" id="menu12" data-type="menu" data-bs-toggle="pill" data-bs-target="#submenu12" type="button" role="tab" aria-controls="submenu12" aria-selected="false">
-                                        <div class="d-flex">
-                                            <div class="image-container">
-                                                <img src="./images/daugiau_kategoriju_menu_icon.svg" />
-                                            </div>
-                                            <div class="col-lg-10">
-                                                <span>Daugiau kategorijų</span>
-                                            </div>
-                                            <img class="right-arrow" src="./images/arrow_right.svg" />
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="tab-content submenu" id="menu_tabsContent" style="max-height: 472px;">
-                                    <div class="tab-pane fade" id="submenu1" data-type="menu_pane" role="tabpanel" aria-labelledby="menu1">
-                                        <div class="d-flex align-items-start">
-                                            <div class="nav flex-column nav-pills" id="submenu_1_tabs" role="tablist" aria-orientation="vertical">
-                                                <button class="nav-link" id="category_1_button_1" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_1_button_1" type="button" role="tab" aria-controls="subcategory_1_button_1" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Atverčiami į apačią</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_1_button_2" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_1_button_2" type="button" role="tab" aria-controls="subcategory_1_button_2" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Atverčiami į šoną</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_1_button_3" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_1_button_3" type="button" role="tab" aria-controls="subcategory_1_button_3" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Originalūs dėklai</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_1_button_4" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_1_button_4" type="button" role="tab" aria-controls="subcategory_1_button_4" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Dėklai planšetiniams / nešiojamiems kompiuteriams</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_1_button_5" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_1_button_5" type="button" role="tab" aria-controls="subcategory_1_button_5" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Dėklai ant rankos</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="tab-content products-menu" id="submenu_1_tabsContent" style="max-height: 472px;">
-                                                <div class="tab-pane fade" id="subcategory_1_button_1" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_1_button_1">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_1_button_2" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_1_button_2">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_1_button_3" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_1_button_3">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_1_button_4" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_1_button_4">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_1_button_5" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_1_button_5">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="submenu2" data-type="menu_pane" role="tabpanel" aria-labelledby="menu2">
-                                        <div class="d-flex align-items-start">
-                                            <div class="nav flex-column nav-pills" id="submenu_2_tabs" role="tablist" aria-orientation="vertical">
-                                                <button class="nav-link" id="category_2_button_1" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_2_button_1" type="button" role="tab" aria-controls="subcategory_2_button_1" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Atverčiami į apačią</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_2_button_2" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_2_button_2" type="button" role="tab" aria-controls="subcategory_2_button_2" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Atverčiami į šoną</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_2_button_3" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_2_button_3" type="button" role="tab" aria-controls="subcategory_2_button_3" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Originalūs dėklai</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                                <button class="nav-link" id="category_2_button_4" data-type="submenu" data-bs-toggle="pill" data-bs-target="#subcategory_2_button_4" type="button" role="tab" aria-controls="subcategory_2_button_4" aria-selected="false">
-                                                    <div class="d-flex">
-                                                        <div class="col category-title">
-                                                            <span>Dėklai planšetiniams / nešiojamiems kompiuteriams</span>
-                                                        </div>
-                                                        <img class="right-arrow-white" src="./images/arrow_right.svg" />
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div class="tab-content products-menu" id="submenu_2_tabsContent" style="max-height: 472px;">
-                                                <div class="tab-pane fade" id="subcategory_2_button_1" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_2_button_1">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_2_button_2" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_2_button_2">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_2_button_3" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_2_button_3">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="subcategory_2_button_4" data-type="submenu_pane" role="tabpanel" aria-labelledby="category_2_button_4">
-                                                    <div class="d-flex">
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Araree Bonnet Stand</a>
-                                                            <a href="#" class="product-item-title">Araree Mustang Diary</a>
-                                                            <a href="#" class="product-item-title">BeHello Gel Wallet</a>
-                                                            <a href="#" class="product-item-title">Book elegance</a>
-                                                            <a href="#" class="product-item-title">Business style</a>
-                                                            <a href="#" class="product-item-title">Cat - Dog</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin Pro</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Skin X</a>
-                                                            <a href="#" class="product-item-title">Dux Ducis Wish</a>
-                                                            <a href="#" class="product-item-title">Flower Book</a>
-                                                            <a href="#" class="product-item-title">Magnet Book</a>
-                                                            <a href="#" class="product-item-title">Mercedes</a>
-                                                        </div>
-                                                        <div class="product-item-column">
-                                                            <a href="#" class="product-item-title">Smart Book</a>
-                                                            <a href="#" class="product-item-title">Smart Magnet</a>
-                                                            <a href="#" class="product-item-title">Smart Pro</a>
-                                                            <a href="#" class="product-item-title">Smart Senso</a>
-                                                            <a href="#" class="product-item-title">Smart Skin</a>
-                                                            <a href="#" class="product-item-title">Smart Venus</a>
-                                                            <a href="#" class="product-item-title">Smart View</a>
-                                                            <a href="#" class="product-item-title">Smart Viva</a>
-                                                            <a href="#" class="product-item-title">Apple</a>
-                                                            <a href="#" class="product-item-title">Samsung</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                <nav class="main-navbar-top">
+                <ul class="dropdown">
+                    <li><a href="#"><img src="./images/deklai_menu_black_icon.svg" /> Dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/ekrano_apsaugos_menu_icon.svg" /> Ekrano apsaugos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/ikrovikliai_menu_icon.svg" /> Įkrovikliai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/kabeliai_menu_icon.svg" /> Kabeliai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/akumuliatoriai_menu_icon.svg" /> Akumuliatoriai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/apsaugines_kaukes_menu_icon.svg" /> Apsauginės kaukės<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/atminties_laikmenos_menu_icon.svg" /> Atminties laikmenos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/laisvu_ranku_iranga_menu_icon.svg" /> Laisvų rankų įranga<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/nesiojami_garsiakalbiai_menu_icon.svg" /> Nešiojami garsiakalbiai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/telefonu_laikikliai_menu_icon.svg" /> Telefonų laikikliai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/vaizdo_registratoriai_menu_icon.svg" /> Vaizdo registratoriai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><img src="./images/daugiau_kategoriju_menu_icon.svg" /> Daugiau kategorijų<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                        <ul>
+                            <li><a href="#">Atverčiami į apačią<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Atverčiami į šoną<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Originalūs dėklai<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Dėklai ant rankos<img class="list-arrow-icon" src="./images/arrow_right.svg" /></a>
+                                <ul>
+                                                        <li><a href="#" class="product-item-title">Araree Bonnet Stand</a></li>
+                                                            <li><a href="#" class="product-item-title">Araree Mustang Diary</a></li>
+                                                            <li><a href="#" class="product-item-title">BeHello Gel Wallet</a></li>
+                                                            <li><a href="#" class="product-item-title">Book elegance</a></li>
+                                                            <li><a href="#" class="product-item-title">Business style</a></li>
+                                                            <li><a href="#" class="product-item-title">Cat - Dog</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Skin X</a></li>
+                                                            <li><a href="#" class="product-item-title">Dux Ducis Wish</a></li>
+                                                            <li><a href="#" class="product-item-title">Flower Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Magnet Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Mercedes</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Book</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Magnet</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Pro</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Senso</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Skin</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Venus</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart View</a></li>
+                                                            <li><a href="#" class="product-item-title">Smart Viva</a></li>
+                                                            <li><a href="#" class="product-item-title">Apple</a></li>
+                                                            <li><a href="#" class="product-item-title">Samsung</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+
             </li>
             <div class="d-flex" style="height: 25px; margin-left: 20px; margin-top: 14px; background-color: #A7A7A7;">
                 <div class="vr"></div>
@@ -943,525 +2140,319 @@
 
 <!-- mobile navbar -->
 <div class="mobile-navbar-container hidden">
-    <div class="container">
-        <div class="row">
-            <div class="d-flex align-items-center justify-between">
-                <div class="hstack top-bar-language-links">
-                        <a class="nav-link active pl-0" href="#">LT</a>
-                        <a class="nav-link" href="#">ENG</a>
-                        <a class="nav-link" href="#">RU</a>
-                        <a class="nav-link" href="#">LV</a>
-                        <a class="nav-link" href="#">EE</a>
+    <div class="inner-container-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-between">
+                    <div class="hstack top-bar-language-links">
+                            <a class="nav-link active pl-0" href="#">LT</a>
+                            <a class="nav-link" href="#">ENG</a>
+                            <a class="nav-link" href="#">RU</a>
+                            <a class="nav-link" href="#">LV</a>
+                            <a class="nav-link" href="#">EE</a>
+                    </div>
+                    <div>
+                        <button class="close-navbar-button"><img src="./images/mobile-close-navbar.svg"/></button>
+                    </div>
                 </div>
-                <div>
-                    <button class="close-navbar-button"><img src="./images/mobile-close-navbar.svg"/></button>
+                <div class="d-flex align-items-center justify-between pb-20">
+                    <button class="profile-btn"><img src="./images/profile-icon.svg"/></button>
+                    <button class="login-btn">Prisijungti</button>
                 </div>
-            </div>
-            <div class="d-flex align-items-center justify-between pb-20">
-                <button class="profile-btn"><img src="./images/profile-icon.svg"/></button>
-                <button class="login-btn">Prisijungti</button>
-            </div>
 
-            <div class="navbar-bottom p-0">
-                <div class="navbar-header">
-                    <div class="container-fluid p-0">
+                <div class="navbar-bottom p-0">
+                    <div class="navbar-header">
+                        <div class="container-fluid p-0">
 
-                        <div class="main-navbar">
-
-                            <a class="row row-dark next-menu" data-menu="menu-1">
-                                <div class="col-2 text-center">
-                                    <img src="./images/catalog-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Prekių katalogas</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-dark next-menu" data-menu="menu-2">
-                                <div class="col-2 text-center">
-                                    <img src="./images/models-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Ieškoti pagal modelį</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/heart-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Patikusios prekės</p>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/delivery-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Pristatymas</p>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/guarantees-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Garantijos</p>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/cookies-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Slapukai</p>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/contacts-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Kontaktai</p>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/info-icon.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Informacija</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="second-menu hidden menu-1">
-
-                            <a class="row row-dark back-btn" data-menu="main-navbar">
-                                <div class="col-2 text-center">
-                                    <img src="./images/menu-back.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Meniu</p>
-                                </div>
-                            </a>
-
-                            <a class="row next-menu" data-menu="menu-deklai">
-                                <div class="col-2 text-center">
-                                    <img src="./images/deklai-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Dėklai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/screen-cover-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Ekrano apsaugos</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/chargers-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Įkrovikliai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/cabels-icons.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Kabeliai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/powerbank-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Akumuliatoriai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/faccemasks-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Apsauginės kaukės</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/data-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Atminties laikmenos</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/parts-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Detalės</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/handset-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Laisvų rankų įranga</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/speakers-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Nešiojami garsiakabliai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/holders-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Telefonų laikikliai</p>
-                                </div>
-                                <div class="col-2">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/registrators-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Vaizdo registratoriai</p>
-                                </div>
-                                <div class="col-2">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-2 text-center">
-                                    <img src="./images/more-icon.svg"/>
-                                </div>
-                                <div class="col-8">
-                                    <p>Daugiau kategorijų</p>
-                                </div>
-                                <div class="col-2">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="second-menu hidden menu-2">
-
-                            <a class="row row-dark back-btn" data-menu="main-navbar">
-                                <div class="col-2 text-center">
-                                    <img src="./images/menu-back.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Meniu</p>
-                                </div>
-                            </a>
-
-                            <a class="row next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Apple</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Samsung</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Xiaomi</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Huawei</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Nokia</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>OnePlus</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Sony</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>LG</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Google</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Lenovo</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
+                            <div class="main-navbar">
+                                <div class="temporarely-mobile-navbar"></div>
+                                <ul class="mobile-main-navbar">
+                                    <li class="div-mobile-navbar-choose li-with-dropdown" data-back="mobile-main-navbar">
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/catalog-icon.svg"/></span> Prekių katalogas <img src="./images/menu-left-icon.svg"/></a>
+                                        <ul>
+                                            <li class="div-mobile-navbar-choose li-with-dropdown important-list-item">
+                                                <a class="list-title-with-img" href="#"><span class="div-img-mobile-spacing"><img src="./images/deklai_menu_black_icon.svg" /></span> Dėklai<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Atverčiami į apačią<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Atverčiami į šoną<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Originalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Dėklai ant rankos<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Dėklai atsparūs vandeniui<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                                <a href="#">Universalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                <a class="list-title-with-img" href="#"><span class="div-img-mobile-spacing"><img src="./images/ekrano_apsaugos_menu_icon.svg" /></span> Ekrano apsaugos<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li>
+                                                                <a href="#">Atverčiami į apačią<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Atverčiami į šoną<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Originalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai ant rankos<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai atsparūs vandeniui<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Universalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="list-title-with-img" href="#"><span class="div-img-mobile-spacing"><img src="./images/ikrovikliai_menu_icon.svg" /></span> Įkrovikliai<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li>
+                                                                <a href="#">Atverčiami į apačią<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Atverčiami į šoną<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Originalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai ant rankos<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai atsparūs vandeniui<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Universalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="list-title-with-img"><span class="div-img-mobile-spacing"><img src="./images/kabeliai_menu_icon.svg" /></span> Kabeliai<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li>
+                                                                <a href="#">Atverčiami į apačią<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Atverčiami į šoną<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Originalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai planšetiniams / nešiojamiems kompiuteriams<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai ant rankos<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Dėklai atsparūs vandeniui<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Universalūs dėklai<img class="right-arrow-white" src="./images/arrow_right.svg" /></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/models-icon.svg"/></span> Ieškoti pagal modelį <img src="./images/menu-left-icon.svg"/></a>
+                                        <ul>
+                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                <a href="#">Apple<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                        <a href="#">Apple 1<img src="./images/arrow_right.svg"/></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                    </li>
+                                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                        <a href="#">Apple 2<img src="./images/arrow_right.svg"/></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                <a href="#">Samsung<img src="./images/next-dark.svg"/></a>
+                                                <ul>
+                                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                        <a href="#">Samsung 1<img src="./images/arrow_right.svg"/></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                    </li>
+                                                    <li class="div-mobile-navbar-choose li-with-dropdown">
+                                                        <a href="#">Samsung 2<img src="./images/arrow_right.svg"/></a>
+                                                                <ul>
+                                                                    <li><a href="#">Atverčiami į apačią</a></li>
+                                                                    <li><a href="#">Atverčiami į šoną</a></li>
+                                                                </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/heart-icon.svg"/></span> Patikusios prekės</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/delivery-icon.svg"/></span> Pristatymas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/guarantees-icon.svg"/></span> Garantijos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/cookies-icon.svg"/></span> Slapukai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/contacts-icon.svg"/></span> Kontaktai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="div-img-mobile-spacing"><img src="./images/info-icon.svg"/></span> Informacija</a>
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
-
-                        <div class="second-menu hidden menu-deklai">
-
-                            <a class="row row-gray back-btn" data-menu="menu-1">
-                                <div class="col-2 text-center">
-                                    <img src="./images/back-icon-dark.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Prekių katalogas</p>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Atverčiami į apačią</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Atverčiami į šoną</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Originalūs dėklai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Dėklai planšetiniams/nešiojamiems kompiuteriems</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Dėklai ant rankos</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Dėklai atsparūs vandeniui</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Universalūs dėklai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Bamperiai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Baseus Enclosure</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Galiniai dėklai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row row-important next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>iQos | Airpod dėklai</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/menu-left-icon.svg"/>
-                                </div>
-                            </a>
-                            
-                        </div>
-
-                        <div class="second-menu hidden menu-apple">
-
-                            <a class="row row-dark back-btn" data-menu="menu-2">
-                                <div class="col-2 text-center">
-                                    <img src="./images/menu-back.svg"/>
-                                </div>
-                                <div class="col-10">
-                                    <p>Modeliai</p>
-                                </div>
-                            </a>
-
-                            <a class="row next-menu" data-menu="menu-apple">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Apple 1</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                            <a class="row">
-                                <div class="col-10 spacing-navbar">
-                                    <p>Apple 2</p>
-                                </div>
-                                <div class="col-2 text-right">
-                                    <img src="./images/next-dark.svg"/>
-                                </div>
-                            </a>
-
-                        </div>
-
                     </div>
                 </div>
             </div>

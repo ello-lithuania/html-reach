@@ -51,21 +51,39 @@
                         <div class="col-lg-4">
                             <input type="text" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Telefonas"/>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 hidden-sm">
                             <input type="text" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Adresas"/>
                         </div>
                         <div class="col-lg-4">
                             <input type="email" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="El. paštas"/>
                         </div>
+                        <div class="address-details hidden-md">
+                            <h5>Adresas</h5>
+                            <div class="col-lg-4">
+                                <input type="email" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Šalis"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="email" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Gatvė"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="email" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Namo-buto numeris"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="email" class="form-control disable-focus default-reach-input default-reach-input-background" placeholder="Pašto kodas"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-20 p-15 mb-40">
+                <div class="row mt-20 p-15 mb-40 last-details">
                     <div class="col-lg-4">
-                        <div class="form-check">
+                        <div class="form-check hidden-sm">
                             <input class="form-check-input" type="radio" name="newsletter" id="newsletterCheckbox" value="newsletter" checked>
                             <label class="form-check-label fs-12" style="color: #6E0EC0;" for="newsletterCheckbox">Gauti naujienlaiškį</label>
                         </div>
-                        <span class="d-block fs-12 mt-10" style="color: #A7A7A7;">Sutikus gauti naujienlaiškį sutinkante gauti naujienas apie prekes ir Jums skirtas pasiūlymus</span>
+                        <span class="d-block fs-12 mt-10 hidden-sm" style="color: #A7A7A7;">Sutikus gauti naujienlaiškį sutinkante gauti naujienas apie prekes ir Jums skirtas pasiūlymus</span>
+                        <div class="d-flex justify-content-between mt-30 hidden-md">
+                            <button class="btn btn-small fs-14">Keisti slaptažodį</button>
+                        </div>
                         <div class="d-flex justify-content-between mt-30">
                             <button class="btn btn-next fs-14" style="border-radius: 8px; text-transform: uppercase; padding: 8px 10px;">Išsaugoti</button>
                         </div>
@@ -496,8 +514,11 @@
                         <div class="col">
                             <span class="fs-14 text-inactive">STATUSAS</span>
                         </div>
-                        <div class="col text-center">
+                        <div class="col text-center hidden-sm">
                             <span class="fs-14 text-inactive">SUMA BE PVM</span>
+                        </div>
+                        <div class="col text-center hidden-md">
+                            <span class="fs-14 text-inactive">Sekimas</span>
                         </div>
                         <div class="col text-center">
                             <span class="fs-14 text-inactive">SUMA SU PVM</span>
@@ -510,7 +531,8 @@
                             <div class="col">0000966634</div>
                             <div class="col text-center">2021-07-15</div>
                             <div class="col"><span class="text-in-progress">Vykdomas</span></div>
-                            <div class="col text-center">20,52 €</div>
+                            <div class="col text-center hidden-sm">20,52 €</div>
+                            <div class="col text-center hidden-md" style="color: #6E0EC0;">Sekti</div>
                             <div class="col text-center"><b>24,99 €</b></div>
                         </div>
                     </div>
@@ -519,7 +541,8 @@
                             <div class="col">0000966634</div>
                             <div class="col text-center">2021-07-15</div>
                             <div class="col"><span class="text-in-progress">Vykdomas</span></div>
-                            <div class="col text-center">20,52 €</div>
+                            <div class="col text-center hidden-sm">20,52 €</div>
+                            <div class="col text-center hidden-md" style="color: #6E0EC0;">Sekti</div>
                             <div class="col text-center"><b>24,99 €</b></div>
                         </div>
                     </div>
@@ -528,7 +551,8 @@
                             <div class="col">0000966634</div>
                             <div class="col text-center">2021-07-15</div>
                             <div class="col"><span class="text-completed">Įvykdytas</span></div>
-                            <div class="col text-center">20,52 €</div>
+                            <div class="col text-center hidden-sm">20,52 €</div>
+                            <div class="col text-center hidden-md" style="color: #6E0EC0;">Sekti</div>
                             <div class="col text-center"><b>24,99 €</b></div>
                         </div>
                     </div>
@@ -537,7 +561,8 @@
                             <div class="col">0000966634</div>
                             <div class="col text-center">2021-07-15</div>
                             <div class="col"><span class="text-completed">Įvykdytas</span></div>
-                            <div class="col text-center">20,52 €</div>
+                            <div class="col text-center hidden-sm">20,52 €</div>
+                            <div class="col text-center hidden-md" style="color: #6E0EC0;">Sekti</div>
                             <div class="col text-center"><b>24,99 €</b></div>
                         </div>
                     </div>
@@ -546,9 +571,22 @@
                             <div class="col">0000966634</div>
                             <div class="col text-center">2021-07-15</div>
                             <div class="col"><span class="text-completed">Įvykdytas</span></div>
-                            <div class="col text-center">20,52 €</div>
+                            <div class="col text-center hidden-sm">20,52 €</div>
+                            <div class="col text-center hidden-md" style="color: #6E0EC0;">Sekti</div>
                             <div class="col text-center"><b>24,99 €</b></div>
                         </div>
+                    </div>
+                    <div class="pagination-container text-center hidden-md">
+                        <button><img src="./images/back-pagination.svg"/></button>
+                        <div class="numeration-container">
+                            <span>2</span>
+                            <span>,</span>
+                            <span>3</span>
+                            <span>,</span>
+                            <span>4</span>
+                            <span>...</span>
+                        </div>
+                        <button><img src="./images/next-pagination.svg"/></button>
                     </div>
                 </div>
 
@@ -968,8 +1006,8 @@
             </div>
             <div class="tab-pane fade show" id="favourite_products_content" role="tabpanel" aria-labelledby="favourite_products_tab">
                 <div class="row mt-60 p-15">
-                    <h4 class="m-0 pl-0">Patikusios prekės</h4>
-                    <div class="row mt-30">
+                    <h4 class="m-0 pl-0"><img src="images/favourite_active.svg" class="active" /> Patikusios prekės</h4>
+                    <div class="row mt-30 hidden-sm">
                         <div class="col-lg-6">
                             <span class="fs-14 text-inactive">PREKĖ</span>
                         </div>
@@ -988,7 +1026,7 @@
                         <div class="col-lg-1"></div>
                     </div>
                 </div>
-                <div class="row pl-15 pr-15">
+                <div class="row pl-15 pr-15 hidden-sm">
                     <div class="col-lg-12 default-card mb-15 pl-0 pr-0">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
@@ -1050,6 +1088,114 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="d-md-hidden">
+
+<div class="d-flex align-items-center product-card mt-10">
+    <div class="col-lg-2 text-center">
+        <img src="./images/product_1_image.svg"/>
+    </div>
+    <div class="col-lg-3">
+        <span class="fs-16">Dėklas Marble Silicone Apple Iphone 12</span>
+        <span class="item-limit hidden-md">Likutis: >10</span>
+    </div>
+            <div class="col-lg-2 text-center product-price-single">
+                <div class="vstack">
+                    <span class="product-new-price">24,99 €</span>
+                </div>
+            </div>
+            <div class="col-lg-1 text-center amount-vertical">
+                <div class="d-flex justify-content-between mt-10">
+                    <button class="btn btn-quantity">+</button>
+                    <span style="display: block;">0</span>
+                    <button class="btn btn-quantity">-</button>
+                </div>
+            </div>
+    <div class="col-lg-4 text-center btn-delete-cart">
+        <button style="background: #6E0EC0;"><img src="./images/cart.svg"/></button>
+        <button><img src="./images/trashcan-icon.svg"/></button>
+    </div>
+</div>
+
+<div class="d-flex align-items-center product-card mt-10">
+    <div class="col-lg-2 text-center">
+        <img src="./images/product_1_image.svg"/>
+    </div>
+    <div class="col-lg-3">
+        <span class="fs-16">Dėklas Marble Silicone Apple Iphone 12</span>
+        <span class="item-limit hidden-md">Likutis: >10</span>
+    </div>
+            <div class="col-lg-2 text-center product-price-single">
+                <div class="vstack">
+                    <span class="product-new-price">24,99 €</span>
+                </div>
+            </div>
+            <div class="col-lg-1 text-center amount-vertical">
+                <div class="d-flex justify-content-between mt-10">
+                    <button class="btn btn-quantity">+</button>
+                    <span style="display: block;">0</span>
+                    <button class="btn btn-quantity">-</button>
+                </div>
+            </div>
+    <div class="col-lg-4 text-center btn-delete-cart">
+        <button style="background: #6E0EC0;"><img src="./images/cart.svg"/></button>
+        <button><img src="./images/trashcan-icon.svg"/></button>
+    </div>
+</div>
+
+<div class="d-flex align-items-center product-card mt-10">
+    <div class="col-lg-2 text-center">
+        <img src="./images/product_1_image.svg"/>
+    </div>
+    <div class="col-lg-3">
+        <span class="fs-16">Dėklas Marble Silicone Apple Iphone 12</span>
+        <span class="item-limit hidden-md">Likutis: >10</span>
+    </div>
+            <div class="col-lg-2 text-center product-price-single">
+                <div class="vstack">
+                    <span class="product-new-price">24,99 €</span>
+                </div>
+            </div>
+            <div class="col-lg-1 text-center amount-vertical">
+                <div class="d-flex justify-content-between mt-10">
+                    <button class="btn btn-quantity">+</button>
+                    <span style="display: block;">0</span>
+                    <button class="btn btn-quantity">-</button>
+                </div>
+            </div>
+    <div class="col-lg-4 text-center btn-delete-cart">
+        <button style="background: #6E0EC0;"><img src="./images/cart.svg"/></button>
+        <button><img src="./images/trashcan-icon.svg"/></button>
+    </div>
+</div>
+
+<div class="d-flex align-items-center product-card mt-10">
+    <div class="col-lg-2 text-center">
+        <img src="./images/product_1_image.svg"/>
+    </div>
+    <div class="col-lg-3">
+        <span class="fs-16">Dėklas Marble Silicone Apple Iphone 12</span>
+        <span class="item-limit hidden-md">Likutis: >10</span>
+    </div>
+            <div class="col-lg-2 text-center product-price-single">
+                <div class="vstack">
+                    <span class="product-new-price">24,99 €</span>
+                </div>
+            </div>
+            <div class="col-lg-1 text-center amount-vertical">
+                <div class="d-flex justify-content-between mt-10">
+                    <button class="btn btn-quantity">+</button>
+                    <span style="display: block;">0</span>
+                    <button class="btn btn-quantity">-</button>
+                </div>
+            </div>
+    <div class="col-lg-4 text-center btn-delete-cart">
+        <button style="background: #6E0EC0;"><img src="./images/cart.svg"/></button>
+        <button><img src="./images/trashcan-icon.svg"/></button>
+    </div>
+</div>
+
+</div>
 
                 <div class="row mt-40">
                     <h4 class="m-0 p-15">Rekomenduojamos Jums</h4>
@@ -1467,7 +1613,47 @@
             </div>
             <div class="tab-pane fade show" id="settings_content" role="tabpanel" aria-labelledby="settings_tab">
                 <div class="row">
-
+                    <h3>Prekių atvaizdavimas</h3>
+                    <div class="settings-inner">
+                        <div class="settings-inner-row">
+                            <div class="row">
+                                <div class="col-md-4 col-9 d-flex align-center"">
+                                    <p>Numatytoji prekių rodymo schema</p>
+                                </div>
+                                <div class="col-md-8 col-3 icon-btns">
+                                    <button><img src="./images/square-icon.svg"/></button>
+                                    <button><img src="./images/two-columns-icon.svg"/></button>
+                                    <button><img src="./images/list-icon.svg"/></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-9 d-flex align-center">
+                                    <p>Puslapyje rodomų prekių kiekis</p>
+                                </div>
+                                <div class="col-md-8 col-3">
+                                    <select name="cars" id="cars">
+                                        <option value="volvo">100</option>
+                                        <option value="saab">200</option>
+                                        <option value="mercedes">300</option>
+                                        <option value="audi">400</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-9 d-flex align-center"">
+                                    <p>Rodyti kainas be PVM</p>
+                                </div>
+                                <div class="col-md-8 col-3">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn-submit">Išsaugoti</button>
+                    </div>
                 </div>
             </div>
         </div>

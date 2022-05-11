@@ -38,7 +38,18 @@
     <div class="d-flex">
         <div class="row">
             <div class="col-lg-5 col-sm-12 p-40">
+                            <div class="product-header-action d-md-hidden">
+                                <img src="images/favourite_active.svg" class="active" />
+                                <div class="product-header-info">
+                                    <span class="badge badge-discount">-10%</span>
+                                    <span class="badge badge-new mt-2">Nauja</span>
+                                    <span class="badge badge-delivery mt-2">
+                                    <img src="./images/truck.svg" /> 4-7d.
+                                    </span>
+                                </div>
+                            </div>
                 <img src="./images/product_stepper_image.png" class="main-image"/>
+
             </div>
             <div class="col-lg-2 alternative-images col-sm-12">
                 <ul>
@@ -68,41 +79,60 @@
             <figure>
                 <h4>Steperis SS002 juodas geltonas</h4>
             </figure>
-            <div class="hstack">
-                <img src="./images/star_active.svg"/>
-                <img src="./images/star_active.svg" class="ml-5"/>
-                <img src="./images/star_active.svg" class="ml-5"/>
-                <img src="./images/star_active.svg" class="ml-5"/>
-                <img src="./images/star_inactive.svg" class="ml-5"/>
-                <span class="d-sm-hidden d-block ml-20 fs-12">3 įvertinimai</span>
-            </div>
-            <span class="d-block fs-12 mt-20 d-sm-hidden" style="color: #A7A7A7;">KAINA</span>
-            <div class="hstack d-sm-hidden">
-                <div style="width: 130px;">
-                    <span class="product-price">30,78 €</span><br/>
+            
+            <div class="mobile-flex">
+                <div class="hstack">
+                    <img src="./images/star_active.svg"/>
+                    <img src="./images/star_active.svg" class="ml-5"/>
+                    <img src="./images/star_active.svg" class="ml-5"/>
+                    <img src="./images/star_active.svg" class="ml-5"/>
+                    <img src="./images/star_inactive.svg" class="ml-5"/>
+                    <span class="d-sm-hidden d-block ml-20 fs-12">3 įvertinimai</span>
                 </div>
-                <span class="badge badge-discount" style="width: 55px; font-size: 11px;">-10%</span>
-            </div>
-            <div class="hstack mt-10 d-sm-hidden">
-                <div style="width: 130px;">
-                    <span class="d-block fs-12" style="color: #A7A7A7;">24,44 € be PVM</span>
+                <span class="d-block fs-12 mt-20 d-sm-hidden" style="color: #A7A7A7;">KAINA</span>
+
+                <div class="hstack d-sm-hidden">
+                    <div style="width: 130px;">
+                        <span class="product-price">30,78 €</span><br/>
+                    </div>
+                    <span class="badge badge-discount" style="width: 55px; font-size: 11px;">-10%</span>
                 </div>
-                <span class="d-block fs-14" style="text-decoration: line-through;padding-left: 6px;">34,99 €</span>
+
+                <div class="hstack mt-10 d-sm-hidden">
+                    <div style="width: 130px;">
+                        <span class="d-block fs-12" style="color: #A7A7A7;">24,44 € be PVM</span>
+                    </div>
+                    <span class="d-block fs-14" style="text-decoration: line-through;padding-left: 6px;">34,99 €</span>
+                </div>
+
+                <div class="text-right-mobile">
+                    <figure class="mb-0 fs-13 mt-10">
+                        <b>Prekės kodas</b>: 000.000.00
+                    </figure>
+                    <figure class="mb-0 fs-13 mt-10">
+                        <b>Barkodas</b>: 400000000000000
+                    </figure>
+                </div>
             </div>
-            <figure class="mb-0 fs-13 mt-10">
-                <b>Prekės kodas</b>: 000.000.00
+
+            <figure class="mb-0 fs-12 mt-2 d-md-hidden quantity-figure">
+                <span class="product-stock-info">&bull; Yra sandėlyje</span>
             </figure>
-            <figure class="mb-0 fs-13 mt-10">
-                <b>Barkodas</b>: 400000000000000
-            </figure>
-            <figure class="mb-0 fs-12 mt-20">
+
+            <figure class="mb-0 fs-12 mt-20 d-sm-hidden">
                 <span class="product-stock-info">&bull; Liko 8 vnt.</span>
             </figure>
-            <figure class="mb-0 fs-12 mt-10">
+            <figure class="mb-0 fs-12 mt-10 delivery-time">
                 <img src="./images/truck.svg" style="margin-right: 10px;" /> Pristatysime per 1 d. - 3 d.d.,
             </figure>
-            <div style="height: 1px; background-color: #A7A7A7; width: 60%; margin-top: 40px;"></div>
-            <div class="d-flex mt-20">
+            <div class="d-sm-hidden" style="height: 1px; background-color: #A7A7A7; width: 60%; margin-top: 40px;"></div>
+
+            <div class="d-md-hidden price-details">
+                    <span class="fs-14" style="text-decoration: line-through;padding-left: 6px;">34,99 €</span>
+                    <span class="fs-14 full-price" style="padding-left: 6px;">24,99 €</span>
+            </div>
+
+            <div class="d-flex mt-20 d-sm-hidden">
                 <figure class="mb-0 fs-13" style="width: 130px;">
                     <span class="fs-12" style="color: #A7A7A7;">PILNA KAINA</span><br/>
                     <span class="d-block product-price" style="color: #000000; margin-top: 5px;">30,78 €</span>
@@ -127,7 +157,7 @@
         </div>
 </div>
     </div>
-    <div class="fs-13 p-40 mt-20" style="border-radius: 10px; background-color: rgba(167, 167, 167, 0.1); line-height: 1.5;">
+    <div class="fs-13 p-40 mt-20 full-description" style="border-radius: 10px; background-color: rgba(167, 167, 167, 0.1); line-height: 1.5;">
         <h3 class="mb-40">Informacija apie prekę</h3>
         <p>POWERFUL HYDRAULIC RESISTANCE SYSTEM: With a Powerful Hydraulic Resistance System, OMMO steppers provide an even pedal resistance and a stable and safety workout environment. Please be attention that the hydraulic tube need to rest after 30-minutes exercises.</p>
         <p>DURABLE AND CAPABLE: The whole product is made of high quality iron material, strong and durable, safe and reliable for long service. This compact stepper can support weight up to 220 lbs. What's more, It only takes up little space, you can put it in any place in your house, and exercise at any time conveniently.</p>
@@ -135,6 +165,28 @@
         <p>RESISTANCE BANDS: OMMO exercise stepper is equipped with 2 detachable resistance bands that allow you to exercise your arms, chest, back and shoulders while exercising your legs, help to build a perfect figure!</p>
         <p>DIGITAL DISPLAY & NON-SLIP PEDALS: The LCD Display will insist you stay focused during your workout as it tracks Scan, Time, Count and Calories. Large textured foot plates provide steady, quiet and smooth workout. Any question of the product, please contact the seller for help.</p>
     </div>
+    <div class="d-md-hidden mobile-add-cart">
+        <div class="container">
+                        <div class="row">
+                            <div class="col-3 text-center quantity-column">
+                                <div class="hstack justify-content-between">
+                                    <button class="btn btn-quantity">-</button>
+                                    <span style="display: block; width: 20px;">0</span>
+                                    <button class="btn btn-quantity">+</button>
+                                </div>
+                            </div>
+                            <div class="col-9 text-right">
+                                <div class="d-flex">
+                                    <span class="d-block product-price" style="color: #000000;">30,78 €</span>
+                                    <button class="btn btn-sm btn-primary btn-add-to-cart float-right">
+                                        <img src="./images/cart.svg" />
+                                    </button>    
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
     <div class="d-flex justify-content-between mt-100">
         <h4>Panašios prekės</h4>
         <div class="hstack">

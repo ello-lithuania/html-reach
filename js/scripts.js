@@ -1,4 +1,128 @@
 $(document).ready(function(){
+    
+    $('.main-navbar').on('click', '.back-btn', function() {
+        $('.temporarely-mobile-navbar').empty().removeClass('important-items');
+        let name = $(this).find('p').text().trim();
+        let newName = $(`.mobile-main-navbar a:contains(${name})`).parent('li').parent('ul').parent('li').children('a:first').text().trim();
+        if(!newName || newName == "Ieškoti pagal modelį" || newName=="Prekių katalogas") {
+            newName="Meniu";
+        }
+        let selected;
+        if($(`.mobile-main-navbar a:contains(${name})`).parent('li').parent('ul').parent('li').length) {
+            selected = $(`.mobile-main-navbar a:contains(${name})`).parent('li').parent('ul').parent('li').attr('class').includes('important-list-item');
+        } else {
+            selected == undefined;
+        }
+        let clone = $(`.mobile-main-navbar a:contains(${name})`).parent( "li" ).parent('ul').clone().html();
+
+        console.log(selected);
+
+        if(name=="Meniu" || !name || name == undefined){
+            $('.mobile-main-navbar').removeClass('hidden'); 
+        } else {
+
+            if(selected) {
+
+                $( ".temporarely-mobile-navbar" ).prepend(`
+                <a class="row row-dark back-btn back-important">
+                    <div class="col-2 text-center">
+                        <img src="./images/back-icon-dark.svg"/>
+                    </div>
+                    <div class="col-10">
+                        <p>${newName}</p>
+                    </div>
+                </a>
+                <ul>
+                    ${clone}
+                </ul>
+                
+                `).addClass('important-items');
+
+                } else {
+
+                    $( ".temporarely-mobile-navbar" ).prepend(`
+                    <a class="row row-dark back-btn">
+                        <div class="col-2 text-center">
+                            <img src="./images/menu-back.svg"/>
+                        </div>
+                        <div class="col-10">
+                            <p>${newName}</p>
+                        </div>
+                    </a>
+                    <ul>
+                        ${clone}
+                    </ul>
+                    
+                    `);
+            }
+        }
+
+
+    });
+    $('.main-navbar').on('click', '.li-with-dropdown', function() {
+
+        let name = $(this).children('a:first').text().trim();
+        if(!name){ 
+            name = 'Meniu';
+        };
+        if(name == "Prekių katalogas" || name == "Ieškoti pagal modelį") {
+            name = 'Meniu';
+        }
+        
+        $('.mobile-main-navbar').addClass('hidden');
+        $('.temporarely-mobile-navbar').empty();
+
+
+        if ($(this).hasClass("important-list-item")) {
+            $( ".temporarely-mobile-navbar" ).append( `
+            <a class="row row-dark back-btn back-important"">
+                <div class="col-2 text-center">
+                    <img src="./images/back-icon-dark.svg"/>
+                </div>
+                <div class="col-10">
+                    <p>${name}</p>
+                </div>
+            </a>
+            ` );
+            $(this).children( "ul" ).clone().appendTo( ".temporarely-mobile-navbar" ).addClass('important-items');
+
+        } else {
+            $( ".temporarely-mobile-navbar" ).append( `
+            <a class="row row-dark back-btn"">
+                <div class="col-2 text-center">
+                    <img src="./images/menu-back.svg"/>
+                </div>
+                <div class="col-10">
+                    <p>${name}</p>
+                </div>
+            </a>
+            ` );
+            $(this).children( "ul" ).clone().appendTo( ".temporarely-mobile-navbar" );
+
+        }
+
+
+    });
+
+    $('.openFilterContainer').click(function() {
+        $('.filter-main-container').removeClass('hidden');
+    });
+    $('.closeFilterContainer').click(function() {
+        $('.filter-main-container').addClass('hidden');
+    });
+
+    $('.openFilterInnerContainer').click(function() {
+        $('.openFilterInnerContainerdiv').removeClass('hidden');
+    });
+
+    $('.closeFilterInnerContainerFilter').click(function() {
+        $(this).closest('.openFilterInnerContainerdiv').addClass('hidden');
+        $('.filter-main-container').removeClass('hidden');
+    });
+    $('.closeFilterInnerContainerFilterBtn').click(function() {
+        $(this).closest('.openFilterInnerContainerdiv').addClass('hidden');
+    });
+
     $('.mobile-menu-icon').click(function() {
         $('.mobile-navbar-container').removeClass('hidden');
     });
@@ -22,11 +146,7 @@ $(document).ready(function(){
         $('.'+menu).removeClass('hidden');
     });
 
-    $('.back-btn').click(function() {
-        let menu = $(this).attr("data-menu");
-        $('.'+menu).removeClass('hidden');
-        $(this).closest('.second-menu').addClass('hidden');
-    });
+
 
     $('.slick-carousel').slick({
         infinite: true,
